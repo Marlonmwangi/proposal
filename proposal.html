@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proposal.css">
+    <title>Proposal</title>
+</head>
+<body>
+    <div class="proposal">
+        <p>Will you be my girl?????</p>
+        <!-- Added id="no-btn" here -->
+        <button class="no-btn" id="no-btn">No</button>
+        <button class="yes-btn" onclick="window.location.href='yesoutcome.html'">Yes</button>
+    </div>
+
+    <button class="back-button" onclick="window.location.href='description.html'">Back</button>
+    <button class="next-button" onclick="window.location.href='end.html'">Next</button>
+
+    <!-- Runaway Button Script -->
+    <script>
+        const noBtn = document.getElementById('no-btn');
+
+        // This makes the button jump when the mouse gets near it
+        noBtn.addEventListener('mouseover', () => {
+            // Calculate screen boundaries, keeping a margin so the button doesn't go off-screen
+            const maxX = window.innerWidth - noBtn.offsetWidth - 20;
+            const maxY = window.innerHeight - noBtn.offsetHeight - 20;
+
+            // Generate random X and Y coordinates
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+
+            // Override its position inside the card and make it float across the whole screen
+            noBtn.style.position = 'fixed';
+            noBtn.style.left = `${randomX}px`;
+            noBtn.style.top = `${randomY}px`;
+        });
+    </script>
+</body>
+</html>
+

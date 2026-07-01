@@ -1,0 +1,144 @@
+/* Base Page Reset */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Center Card */
+.proposal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Changed from 100% to fit screen edges nicely */
+    max-width: 450px; /* Prevents card from getting stretched too wide */
+    border: 2px solid #ccc;
+    background-color: rgb(211, 136, 136);
+    padding: 20px;
+    border-radius: 2cm;
+    box-sizing: border-box;
+}
+
+/* Choice Buttons Inside Card */
+.yes-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.no-btn {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    
+    /* Add these two lines for smooth dodging */
+    transition: left 0.1s ease, top 0.1s ease;
+    z-index: 5;
+}
+
+
+/* Bottom Left Navigation Button */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+/* Bottom Right Navigation Button */
+.next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+/* Mobile Responsiveness (Screens 600px wide or smaller) */
+@media screen and (max-width: 600px) {
+    .back-button, .next-button {
+        padding: 12px 24px; /* Slightly smaller button sizing for phone displays */
+        font-size: 14px;
+        bottom: 15px;
+    }
+    .back-button { left: 15px; }
+    .next-button { right: 15px; }
+}
+.description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Changed from 100% to fit screen edges nicely */
+    max-width: 450px; /* Prevents card from getting stretched too wide */
+    border: 2px solid #ccc;
+    background-color: rgb(47, 179, 146);
+    padding: 20px;
+    border-radius: 2cm;
+    box-sizing: border-box;
+}
+.slide1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Changed from 100% to fit screen edges nicely */
+    max-width: 450px; /* Prevents card from getting stretched too wide */
+    border: 2px solid #ccc;
+    background-color: rgb(117, 119, 239);
+    padding: 20px;
+    border-radius: 2cm;
+    box-sizing: border-box;
+}
+.outcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Changed from 100% to fit screen edges nicely */
+    max-width: 450px; /* Prevents card from getting stretched too wide */
+    border: 2px solid #ccc;
+    background-color: rgb(227, 30, 122);
+    padding: 20px;
+    border-radius: 2cm;
+    box-sizing: border-box;
+}
